@@ -1,4 +1,4 @@
-This repo creates a vagrant virtualbox box (ubuntu 16.04.06 server), installs nginx and tests if nginx is installed.
+This repo creates a vagrant virtualbox box (ubuntu 16.04.06 server), installs mysql-server and tests if this is installed.
 
 # Pre-req
 * Packer 1.4.5

@@ -26,9 +26,11 @@ This repo creates a vagrant virtualbox box (ubuntu 16.04.06 server), installs my
 1. create Vagrant virtual box using Packer and template.json
    `packer build template.json`
    
-1. check if the box is installed into Vagrant `vagrant box list`
+   The output of this will be box ubuntu-1604-vbox-box.
+   
+1. add the box locally `vagrant box add --name test-ubuntu-mysql-vbox ubuntu-1604-vbox.box`
 
-1. add the box locally `vagrant box add --name test-box ubuntu-1604-vbox.box`
+1. check if _test-ubuntu-mysql-vbox_ is installed into Vagrant `vagrant box list`
 
 1. install Chef on the instance, upload cookbook files and minimal configuration and start Chef run based on kitchen.yml file
    * `bundle exec kitchen converge`

@@ -1,0 +1,17 @@
+driver:
+  name: vagrant
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: test-ubuntu-mysql-vbox
+    driver:
+      box: test-ubuntu-mysql-vbox
+      provider: virtualbox
+
+verifier:
+  name: inspec
+
+suites:
+  - name: default
